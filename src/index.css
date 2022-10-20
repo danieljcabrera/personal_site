@@ -26,15 +26,15 @@ div.section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* border: 2px solid white; */
+  width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For desktop: */
+@media only screen and (max-width: 1280px) {
+  /* For mobile: */
 
   h1.section-header {
     color: white;
-    font-size: 7rem;
+    font-size: 4rem;
     font-family: "Michroma", sans-serif;
     text-align: center;
   }
@@ -55,13 +55,258 @@ div.section {
   nav {
     display: flex;
     /* border: 2px solid red; */
+  }
+
+  header img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin-left: 3rem;
+  }
+
+  div.link {
+    text-align: center;
+    /* border: 2px solid green; */
+    margin: 0 1rem;
+  }
+
+  div.link a {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+  }
+
+  div.link a:hover {
+    color: red;
+  }
+
+  /* Footer Section */
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 14rem);
+    width: 100%;
+    background: #263238;
+    padding: 2rem 0;
+  }
+
+  div#name-contact-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  div#logo-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img#footer-logo {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+  }
+
+  p#footer-name {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-size: 2rem;
+  }
+
+  div#contact-links-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div#contact-links-container a {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 1.4rem;
+  }
+
+  footer svg {
+    color: white;
+    margin-right: 1rem;
+  }
+
+  p#copyright {
+    color: white;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* About Section */
+  div#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 20rem);
+    /* border: 2px solid white; */
+  }
+
+  h1#about-name {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  p#about-description {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* Project Section  */
+  div#project-cards {
+    display: block;
+  }
+
+  div#project-card-row {
+    display: block;
+    width: 100%;
+  }
+
+  div#project-card {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 4rem auto;
+    border-radius: 5%;
+    background: #263238;
+    padding: 1rem 0;
+  }
+
+  div#project-card-header {
+    text-align: center;
+  }
+
+  h1#project-card-title {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  h2#project-card-subtitle {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  p#project-card-date {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-size: 1rem;
+  }
+
+  h3#project-card-job-title {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  div#project-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  img#project-card-img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  p#project-card-description {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  div#project-card-links {
+    display: flex;
+    overflow: scroll;
+    margin-left: 2rem;
+  }
+
+  div#project-card-links svg {
+    color: #84685a;
+    margin-right: 0.5rem;
+  }
+
+  div#project-card-links a {
+    display: flex;
+    color: #84685a;
+    text-decoration: none;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  div#project-card-links p {
+    display: flex;
+    color: #84685a;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 1.75rem;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  /* For desktop: */
+
+  h1.section-header {
+    color: white;
+    font-size: 7rem;
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+  }
+
+  /* Nav Section */
+  header {
+    display: flex;
+    top: 0;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    position: sticky;
+  }
+
+  nav {
+    display: flex;
+    /* border: 2px solid red; */
     margin-right: 7rem;
   }
 
   header img {
     border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
+    height: 8rem;
+    width: 8rem;
     margin-left: 7rem;
   }
 
@@ -73,7 +318,7 @@ div.section {
 
   div.link a {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
   }
@@ -81,15 +326,21 @@ div.section {
   /* Footer Section */
   footer {
     display: flex;
+    flex-direction: column;
     background: #263238;
-    min-height: 30rem;
-    margin-top: 4rem;
+    min-height: 40rem;
+    padding: 2rem 0;
+  }
+
+  div#name-contact-container {
+    display: flex;
+    flex: 1;
+    margin-bottom: 1rem;
   }
 
   div#logo-name-container {
     display: flex;
     align-items: center;
-    /* border: 2px solid red; */
     width: 50%;
     justify-content: right;
     margin-right: 3rem;
@@ -122,12 +373,21 @@ div.section {
     color: white;
     text-decoration: none;
     font-family: "Open-Sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   footer svg {
     color: white;
     margin-right: 1rem;
+  }
+
+  p#copyright {
+    display: block;
+    color: white;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: auto;
   }
 
   /* About Section */
@@ -149,82 +409,87 @@ div.section {
   p#about-description {
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   /* Project Section  */
-  div#project-card-background {
-    width: 35%;
-    min-height: 40rem;
-    margin: 4rem auto;
-    padding: 3rem 0;
-    border-radius: 5%;
+  div#project-cards {
+    display: block;
   }
 
-  div#project-card-background:hover {
-    transform: scale(1.1);
-    background-color: rgb(132, 104, 90, 0.3);
+  div#project-card-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   div#project-card {
-    width: 90%;
-    margin: 0 auto;
-    background: #263238;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 4rem;
     border-radius: 5%;
-    padding: 1rem 0;
+    background: #263238;
+    padding: 2rem 0;
   }
 
-  div#header-date-container {
-    display: flex;
-    justify-content: space-between;
+  div#project-card-header {
+    text-align: center;
   }
 
   h1#project-card-title {
     color: white;
     font-family: "Michroma", sans-serif;
-    font-size: 2rem;
-    margin-left: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
   }
 
   h2#project-card-subtitle {
     color: white;
     font-family: "Michroma", sans-serif;
-    font-size: 2rem;
-    margin-left: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
   }
 
   p#project-card-date {
     color: white;
     font-family: "Michroma", sans-serif;
-    font-size: 1rem;
-    margin-right: 1.5rem;
+    font-size: 2rem;
   }
 
   h3#project-card-job-title {
     color: white;
     font-family: "Michroma", sans-serif;
-    font-size: 1rem;
-    margin-left: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  div#project-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
   img#project-card-img {
-    display: block;
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin: 2rem auto;
+    margin-bottom: 2rem;
   }
 
   p#project-card-description {
+    width: 80%;
+    text-align: center;
     color: white;
     font-family: "Open-Sans", sans-serif;
-    font-size: 1.5rem;
-    margin: 0 1.5rem;
-    padding-bottom: 1rem;
+    font-size: 2rem;
   }
 
   div#project-card-links {
     display: flex;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
 
   div#project-card-links svg {
@@ -233,15 +498,20 @@ div.section {
   }
 
   div#project-card-links a {
+    display: flex;
     color: #84685a;
     text-decoration: none;
     font-family: "Open-Sans", sans-serif;
-    font-size: 1.5rem;
-  }
-
-  div#project-card-links a {
-    display: flex;
+    font-size: 2rem;
     align-items: center;
     margin-right: 1rem;
+  }
+
+  div#project-card-links p {
+    display: flex;
+    color: #84685a;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 2rem;
+    align-items: center;
   }
 }
