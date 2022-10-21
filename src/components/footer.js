@@ -6,14 +6,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import ArticleIcon from "@mui/icons-material/Article";
 
-import Killua from "../images/KilluaProfilePic.jpg";
+import Logo from "../images/Logo.png";
 
 const Footer = () => {
   return (
     <footer>
       <div id="name-contact-container">
         <div id="logo-name-container">
-          <img src={Killua} alt="" id="footer-logo"></img>
+          <img src={Logo} alt="" id="footer-logo"></img>
           <p id="footer-name">Daniel Cabrera</p>
         </div>
         <div id="contact-links-container">

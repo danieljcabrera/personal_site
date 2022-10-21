@@ -3,6 +3,9 @@
 
 /* Maintains header, body, footer structure */
 #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #343d52;
 }
 
@@ -17,501 +20,432 @@ html {
   font-size: 62.5%;
 }
 
+/* Page Sections */
 div.section {
-  min-height: calc(100vh - 8rem);
-  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
 }
 
-@media only screen and (max-width: 1280px) {
-  /* For mobile: */
+h1.section-header {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+}
 
+/* Header Section */
+header {
+  display: flex;
+  top: 0;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 2rem 0;
+  position: sticky;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  margin-right: 1rem;
+}
+
+header img {
+  margin: 2rem;
+}
+
+div.link {
+  margin: 0 1rem;
+}
+
+div.link a:hover {
+  text-decoration: underline;
+}
+
+div.link a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #263238;
+  padding: 2rem 0;
+  bottom: 0;
+  margin-top: 4rem;
+}
+
+div#name-contact-container {
+  display: flex;
+}
+
+div#logo-name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img#footer-logo {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+p#footer-name {
+  color: white;
+  font-family: "Michroma", sans-serif;
+}
+
+div#contact-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#contact-links-container a {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 1.3rem;
+  width: fit-content;
+}
+
+div#contact-links-container a:hover {
+  text-decoration: underline;
+}
+
+footer svg {
+  color: white;
+  margin-right: 1rem;
+}
+
+p#copyright {
+  color: white;
+  font-family: "Open-Sans", sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* About Section */
+div#about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1#about-name {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+}
+
+p#about-description {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+}
+
+/* Project Section  */
+div#project-cards {
+  display: block;
+}
+
+div#project-card-row {
+  display: flex;
+  flex-direction: column;
+}
+
+div#project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  background: #263238;
+  padding: 2rem 0;
+}
+
+div#project-card-header {
+  text-align: center;
+}
+
+h1#project-card-title {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+h2#project-card-subtitle {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+p#project-card-date {
+  color: white;
+  font-family: "Michroma", sans-serif;
+}
+
+h3#project-card-job-title {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+div#project-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+img#project-card-img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+p#project-card-description {
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-family: "Open-Sans", sans-serif;
+}
+
+div#project-card-links {
+  display: flex;
+  margin: 0 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+div#project-card-links svg {
+  color: #84685a;
+  margin-right: 0.5rem;
+}
+
+div#project-card-links a {
+  display: flex;
+  color: #84685a;
+  text-decoration: none;
+  font-family: "Open-Sans", sans-serif;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+div#project-card-links a:hover {
+  text-decoration: underline;
+}
+
+div#project-card-links p {
+  display: flex;
+  color: #84685a;
+  font-family: "Open-Sans", sans-serif;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
   h1.section-header {
-    color: white;
     font-size: 4rem;
-    font-family: "Michroma", sans-serif;
-    text-align: center;
   }
 
-  /* Nav Section */
-  header {
-    display: flex;
-    top: 0;
-    backdrop-filter: blur(8px);
-    width: 100%;
-    padding: 1rem 0;
-    align-items: center;
-    justify-content: space-between;
-    height: 8rem;
-    position: sticky;
-  }
-
-  nav {
-    display: flex;
-    /* border: 2px solid red; */
-  }
-
+  /* Header Section */
   header img {
-    border-radius: 50%;
     height: 3rem;
     width: 3rem;
-    margin-left: 3rem;
-  }
-
-  div.link {
-    text-align: center;
-    /* border: 2px solid green; */
-    margin: 0 1rem;
   }
 
   div.link a {
-    color: white;
-    font-size: 1.5rem;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
-  }
-
-  div.link a:hover {
-    color: red;
+    font-size: 1rem;
   }
 
   /* Footer Section */
   footer {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 14rem);
-    width: 100%;
-    background: #263238;
-    padding: 2rem 0;
+    min-height: 80vh;
   }
 
   div#name-contact-container {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-bottom: 1rem;
   }
-
-  div#logo-name-container {
-    display: flex;
+  div#contact-links-container {
+    flex: 1;
     align-items: center;
-    justify-content: center;
-  }
-
-  img#footer-logo {
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    margin-right: 1rem;
   }
 
   p#footer-name {
-    color: white;
-    font-family: "Michroma", sans-serif;
     font-size: 2rem;
-  }
-
-  div#contact-links-container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
   }
 
   div#contact-links-container a {
-    display: flex;
-    margin-bottom: 1.5rem;
-    align-items: center;
     justify-content: center;
-    color: white;
-    text-decoration: none;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 1.4rem;
-  }
-
-  footer svg {
-    color: white;
-    margin-right: 1rem;
-  }
-
-  p#copyright {
-    color: white;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
   }
 
   /* About Section */
-  div#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 20rem);
-    /* border: 2px solid white; */
-  }
-
   h1#about-name {
-    color: white;
-    font-family: "Michroma", sans-serif;
     font-size: 5rem;
-    text-align: center;
   }
 
   p#about-description {
-    color: white;
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
-  /* Project Section  */
-  div#project-cards {
-    display: block;
-  }
-
-  div#project-card-row {
-    display: block;
-    width: 100%;
-  }
-
+  /* Project Section */
   div#project-card {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    width: 80%;
     margin: 4rem auto;
-    border-radius: 5%;
-    background: #263238;
-    padding: 1rem 0;
-  }
-
-  div#project-card-header {
-    text-align: center;
   }
 
   h1#project-card-title {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem;
+    font-size: 2rem;
   }
 
   h2#project-card-subtitle {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem;
+    font-size: 2rem;
   }
 
   p#project-card-date {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   h3#project-card-job-title {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  div#project-card-body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem 0;
-  }
-
-  img#project-card-img {
-    width: 80%;
-    height: auto;
-    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
   }
 
   p#project-card-description {
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 1.5rem;
-  }
-
-  div#project-card-links {
-    display: flex;
-    overflow: scroll;
-    margin-left: 2rem;
-  }
-
-  div#project-card-links svg {
-    color: #84685a;
-    margin-right: 0.5rem;
+    font-size: 1.25rem;
   }
 
   div#project-card-links a {
-    display: flex;
-    color: #84685a;
-    text-decoration: none;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 1.5rem;
-    align-items: center;
-    margin-right: 1rem;
+    font-size: 1.25rem;
   }
 
   div#project-card-links p {
-    display: flex;
-    color: #84685a;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 1.75rem;
-    align-items: center;
+    font-size: 1.25rem;
   }
 }
 
-@media only screen and (min-width: 1281px) {
-  /* For desktop: */
-
+@media only screen and (min-width: 601px) {
   h1.section-header {
-    color: white;
-    font-size: 7rem;
-    font-family: "Michroma", sans-serif;
-    text-align: center;
+    font-size: 6.5rem;
   }
 
-  /* Nav Section */
-  header {
-    display: flex;
-    top: 0;
-    backdrop-filter: blur(8px);
-    width: 100%;
-    padding: 2rem 0;
-    align-items: center;
-    justify-content: space-between;
-    height: 8rem;
-    position: sticky;
-  }
-
-  nav {
-    display: flex;
-    /* border: 2px solid red; */
-    margin-right: 7rem;
-  }
-
+  /* Header Section */
   header img {
-    border-radius: 50%;
-    height: 8rem;
-    width: 8rem;
-    margin-left: 7rem;
-  }
-
-  div.link {
-    text-align: center;
-    /* border: 2px solid green; */
-    margin: 0 3rem;
+    height: 7rem;
+    width: 7rem;
   }
 
   div.link a {
-    color: white;
-    font-size: 3rem;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
+    font-size: 2rem;
   }
 
   /* Footer Section */
-  footer {
-    display: flex;
-    flex-direction: column;
-    background: #263238;
-    min-height: 40rem;
-    padding: 2rem 0;
-  }
-
   div#name-contact-container {
-    display: flex;
-    flex: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   div#logo-name-container {
-    display: flex;
-    align-items: center;
-    width: 50%;
+    flex: 1;
     justify-content: right;
     margin-right: 3rem;
   }
 
-  img#footer-logo {
-    border-radius: 50%;
-    height: 8rem;
-    width: 8rem;
-    margin-right: 1rem;
-  }
-
-  p#footer-name {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 4rem;
-  }
-
   div#contact-links-container {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex: 1;
+    justify-content: left;
     margin-left: 3rem;
   }
 
-  div#contact-links-container a {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-family: "Open-Sans", sans-serif;
+  p#footer-name {
     font-size: 2rem;
-  }
-
-  footer svg {
-    color: white;
-    margin-right: 1rem;
-  }
-
-  p#copyright {
-    display: block;
-    color: white;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: auto;
   }
 
   /* About Section */
-  div#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 20rem);
-  }
-
   h1#about-name {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 10rem;
-    text-align: center;
+    font-size: 7.5rem;
   }
 
   p#about-description {
-    color: white;
-    text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
-  /* Project Section  */
-  div#project-cards {
-    display: block;
-  }
-
-  div#project-card-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-  }
-
+  /* Project Section */
   div#project-card {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin: 4rem;
-    border-radius: 5%;
-    background: #263238;
-    padding: 2rem 0;
-  }
-
-  div#project-card-header {
-    text-align: center;
+    width: 65%;
+    margin: 4rem auto;
   }
 
   h1#project-card-title {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
 
   h2#project-card-subtitle {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
 
   p#project-card-date {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h3#project-card-job-title {
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  div#project-card-body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-  }
-
-  img#project-card-img {
-    width: 80%;
-    height: auto;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
 
   p#project-card-description {
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 2rem;
-  }
-
-  div#project-card-links {
-    display: flex;
-    margin-left: 2rem;
-  }
-
-  div#project-card-links svg {
-    color: #84685a;
-    margin-right: 0.5rem;
+    font-size: 1.25rem;
   }
 
   div#project-card-links a {
-    display: flex;
-    color: #84685a;
-    text-decoration: none;
-    font-family: "Open-Sans", sans-serif;
-    font-size: 2rem;
-    align-items: center;
-    margin-right: 1rem;
+    font-size: 1.25rem;
   }
 
   div#project-card-links p {
-    display: flex;
-    color: #84685a;
-    font-family: "Open-Sans", sans-serif;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  h1.section-header {
+    font-size: 7rem;
+  }
+
+  /* About Section */
+  h1#about-name {
+    font-size: 9rem;
+  }
+
+  p#about-description {
     font-size: 2rem;
-    align-items: center;
+  }
+
+  /* Project Section */
+  div#project-card-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div#project-card {
+    width: 27%;
+    margin: 4rem auto;
   }
 }

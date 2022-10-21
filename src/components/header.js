@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Killua from "../images/KilluaProfilePic.jpg";
+import Logo from "../images/Logo.png";
 
 const Header = () => {
   return (
     <header>
-      <img src={Killua} alt=""></img>
+      <img src={Logo} alt=""></img>
       <nav>
         <div className="link">
           <Link to="/">Home</Link>
