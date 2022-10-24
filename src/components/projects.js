@@ -16,7 +16,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 
 export default function Projects() {
   return (
-    <div className="section">
+    <div className="section" id="projects">
       <h1 className="section-header">Projects</h1>
       <div id="project-cards">
         <div id="project-card-row">

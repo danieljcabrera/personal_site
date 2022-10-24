@@ -27,11 +27,6 @@ div.section {
   min-height: 100vh;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-}
-
 h1.section-header {
   color: white;
   font-family: "Michroma", sans-serif;
@@ -48,7 +43,6 @@ header {
   align-items: center;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
   padding: 2rem 0;
   position: sticky;
   z-index: 999;
@@ -56,25 +50,35 @@ header {
 
 nav {
   display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img#header-logo {
+  margin-left: 2rem;
+}
+
+img#header-logo:hover {
+  cursor: pointer;
+}
+
+ul#nav-links {
+  display: flex;
+  list-style-type: none;
   margin-right: 1rem;
 }
 
-header img {
-  margin: 2rem;
-}
-
-div.link {
-  margin: 0 1rem;
-}
-
-div.link a:hover {
-  text-decoration: underline;
-}
-
-div.link a {
+li.nav-link-item {
+  margin: 0 2rem;
   color: white;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
+  cursor: pointer;
+}
+
+li.nav-link-item:hover {
+  text-decoration: underline;
 }
 
 /* Footer Section */
@@ -273,7 +277,7 @@ div#project-card-links p {
     width: 3rem;
   }
 
-  div.link a {
+  li.nav-link-item {
     font-size: 1rem;
   }
 
@@ -289,7 +293,8 @@ div#project-card-links p {
   }
   div#contact-links-container {
     flex: 1;
-    align-items: center;
+    margin: auto;
+    width: fit-content;
   }
 
   p#footer-name {
@@ -355,7 +360,7 @@ div#project-card-links p {
     width: 7rem;
   }
 
-  div.link a {
+  li.nav-link-item {
     font-size: 2rem;
   }
 

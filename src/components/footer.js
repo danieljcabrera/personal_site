@@ -10,7 +10,7 @@ import Logo from "../images/Logo.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <div id="name-contact-container">
         <div id="logo-name-container">
           <img src={Logo} alt="" id="footer-logo"></img>
