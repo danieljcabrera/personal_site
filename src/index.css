@@ -81,6 +81,15 @@ li.nav-link-item:hover {
   text-decoration: underline;
 }
 
+.burger-menu {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  cursor: pointer;
+}
+
 /* Footer Section */
 footer {
   display: flex;
@@ -234,19 +243,20 @@ p#project-card-description {
   font-family: "Open-Sans", sans-serif;
 }
 
-div#project-card-links {
+ul#project-card-links {
   display: flex;
   margin: 0 2rem;
   overflow-x: auto;
   overflow-y: hidden;
+  list-style-type: none;
 }
 
-div#project-card-links svg {
+ul#project-card-links svg {
   color: #84685a;
   margin-right: 0.5rem;
 }
 
-div#project-card-links a {
+ul#project-card-links a {
   display: flex;
   color: #84685a;
   text-decoration: none;
@@ -255,11 +265,11 @@ div#project-card-links a {
   margin-right: 1rem;
 }
 
-div#project-card-links a:hover {
+ul#project-card-links a:hover {
   text-decoration: underline;
 }
 
-div#project-card-links p {
+ul#project-card-links p {
   display: flex;
   color: #84685a;
   font-family: "Open-Sans", sans-serif;
@@ -281,9 +291,13 @@ div#project-card-links p {
     font-size: 1rem;
   }
 
+  .burger-menu {
+    display: none;
+  }
+
   /* Footer Section */
   footer {
-    min-height: 80vh;
+    min-height: 75vh;
   }
 
   div#name-contact-container {
@@ -340,11 +354,11 @@ div#project-card-links p {
     font-size: 1.25rem;
   }
 
-  div#project-card-links a {
+  ul#project-card-links a {
     font-size: 1.25rem;
   }
 
-  div#project-card-links p {
+  ul#project-card-links p {
     font-size: 1.25rem;
   }
 }
@@ -420,11 +434,11 @@ div#project-card-links p {
     font-size: 1.25rem;
   }
 
-  div#project-card-links a {
+  ul#project-card-links a {
     font-size: 1.25rem;
   }
 
-  div#project-card-links p {
+  ul#project-card-links p {
     font-size: 1.25rem;
   }
 }

@@ -22,7 +22,11 @@ export default function ProjectCard({
         <img id="project-card-img" src={cardImg} alt={cardImgAlt}></img>
         <p id="project-card-description">{description}</p>
       </div>
-      <div id="project-card-links">{links}</div>
+      <ul id="project-card-links">
+        {links.map((link, i) => (
+          <li key={i}>{link}</li>
+        ))}
+      </ul>
     </div>
   );
 }
