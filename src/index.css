@@ -38,25 +38,14 @@ h1.section-header {
 header {
   display: flex;
   top: 0;
-  backdrop-filter: blur(8px);
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-  align-items: center;
   padding: 2rem 0;
-  position: sticky;
-  z-index: 999;
-}
-
-nav {
-  display: flex;
-  min-width: 100%;
-  align-items: center;
   justify-content: space-between;
 }
 
 img#header-logo {
-  margin-left: 2rem;
+  margin: 0 2rem;
 }
 
 img#header-logo:hover {
@@ -66,11 +55,9 @@ img#header-logo:hover {
 ul#nav-links {
   display: flex;
   list-style-type: none;
-  margin-right: 1rem;
 }
 
 li.nav-link-item {
-  margin: 0 2rem;
   color: white;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
@@ -79,15 +66,6 @@ li.nav-link-item {
 
 li.nav-link-item:hover {
   text-decoration: underline;
-}
-
-.burger-menu {
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  right: 2%;
-  top: 1%;
-  cursor: pointer;
 }
 
 /* Footer Section */
@@ -287,11 +265,42 @@ ul#project-card-links p {
     width: 3rem;
   }
 
-  li.nav-link-item {
-    font-size: 1rem;
+  nav#mobile-navigation .burger-menu {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    cursor: pointer;
   }
 
-  .burger-menu {
+  div#burger-opacity-background {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+  }
+
+  div#burger-sidebar {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    background: rgba(26, 30, 41);
+  }
+
+  ul#nav-links {
+    flex-direction: column;
+    margin-top: 16rem;
+    margin-left: 2rem;
+  }
+
+  li.nav-link-item {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  nav#navigation {
     display: none;
   }
 
@@ -369,12 +378,27 @@ ul#project-card-links p {
   }
 
   /* Header Section */
+  header {
+    position: sticky;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+  }
+
   header img {
     height: 7rem;
     width: 7rem;
   }
 
+  nav#mobile-navigation {
+    display: none;
+  }
+
+  ul#nav-links {
+    margin-right: 1rem;
+  }
+
   li.nav-link-item {
+    margin: 0 2rem;
     font-size: 2rem;
   }
 
