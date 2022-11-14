@@ -55,11 +55,7 @@ export default function Projects() {
                 link="https://abfhw.netlify.app/"
                 text="Website"
               ></LogoAndLink>,
-              <LogoAndLink
-                icon={<GitHubIcon sx={{ fontSize: 30 }}></GitHubIcon>}
-                link="https://github.com/adventurebiofeedback/homework"
-                text="GitHub"
-              ></LogoAndLink>
+              <p>Private GitHub Repos</p>
             ]}
           ></ProjectCard>
         </div>

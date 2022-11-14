@@ -5,7 +5,7 @@ export default function About() {
     <div className="section">
       <div id="about">
         <h1 id="about-name">Daniel Cabrera</h1>
-        <p id="about-description">Software Engineer</p>
+        <p id="about-description">Software Engineering</p>
       </div>
     </div>
   );

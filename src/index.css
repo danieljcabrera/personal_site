@@ -227,6 +227,8 @@ ul#project-card-links {
   overflow-x: auto;
   overflow-y: hidden;
   list-style-type: none;
+  align-items: center;
+  height: 3rem;
 }
 
 ul#project-card-links svg {
@@ -328,6 +330,23 @@ ul#project-card-links p {
     justify-content: center;
   }
 
+  /* Button To Top Section */
+  #button-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    color: #707a91;
+  }
+
+  #button-to-top-arrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    margin: 1rem;
+  }
+
   /* About Section */
   h1#about-name {
     font-size: 5rem;
@@ -421,6 +440,11 @@ ul#project-card-links p {
 
   p#footer-name {
     font-size: 2rem;
+  }
+
+  /* Button To Top Section */
+  div#button-to-top-container {
+    display: none;
   }
 
   /* About Section */

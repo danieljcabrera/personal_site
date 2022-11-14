@@ -7,6 +7,7 @@ import Home from "./pages/home";
 // Components
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ButtonToTop from "./components/button-to-top";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <ButtonToTop />
       <Footer />
     </Router>
   );
