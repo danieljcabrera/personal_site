@@ -26,8 +26,8 @@ export default function Projects() {
             jobTitle="Freelance Web Developer @ Borracho Saloon"
             cardImg={BorrachoSaloonWebsite}
             cardImgAlt="Borracho Saloon website homepage"
-            description="Leading development on a full stack website for Borracho Saloon in Munds Park, AZ that will be complete with static business 
-          information, events displayed using Facebook API, and a merchandise store powered by Stripe"
+            description="Leading development on a full stack website for Borracho Saloon in Munds Park, AZ that will be complete with static business information,
+            events displayed using Facebook API, and a merchandise store powered by Stripe"
             links={[<p>Site coming soon!</p>]}
           ></ProjectCard>
 
@@ -47,8 +47,8 @@ export default function Projects() {
             jobTitle="Web Developer Intern @ Adventure Biofeedback"
             cardImg={AdventureBiofeedbackWebsite}
             cardImgAlt=""
-            description="Designed and developed a full stack web application complete with a user profile, patient dashboard, 
-          and homework builder utilized by 150+ speech language pathologists and 300+ patients for patient therapy"
+            description="Designed and developed a full stack web application complete with a user profile, patient dashboard,
+            and homework builder utilized by 150+ speech language pathologists and 300+ patients for patient therapy"
             links={[
               <LogoAndLink
                 icon={<LanguageIcon sx={{ fontSize: 30 }}></LanguageIcon>}
@@ -68,8 +68,7 @@ export default function Projects() {
             jobTitle="Undergraduate Researcher @ Mobley Lab UCI"
             cardImg={WBOInterpolationeMoleculesPubChem}
             cardImgAlt=""
-            description="Led analysis on differences in Wiberg bond order calculations between two major commercial databases, eMolecules and PubChem, 
-          and two major conformer toolkits, AmberTools and OpenEye"
+            description="Led analysis on differences in Wiberg bond order calculations between two major commercial databases, eMolecules and PubChem"
             links={[
               <LogoAndLink
                 icon={<LanguageIcon sx={{ fontSize: 30 }}></LanguageIcon>}
@@ -91,8 +90,7 @@ export default function Projects() {
             jobTitle="Undergraduate Researcher @ Mobley Lab UCI"
             cardImg={WBOInterpolationAmbertoolsOpeneye}
             cardImgAlt=""
-            description="Led analysis on differences in Wiberg bond order calculations between two major commercial databases, eMolecules and PubChem, 
-          and two major conformer toolkits, AmberTools and OpenEye"
+            description="Led analysis on differences in Wiberg bond order calculations between two major conformer toolkits, AmberTools and OpenEye"
             links={[
               <LogoAndLink
                 icon={<LanguageIcon sx={{ fontSize: 30 }}></LanguageIcon>}
@@ -118,8 +116,8 @@ export default function Projects() {
             jobTitle="Undergraduate Researcher @ Mobley Lab UCI"
             cardImg={DANCEMolecule}
             cardImgAlt=""
-            description="Developed customizable fingerprint functions to filter commercial molecule databases and tag molecules with unique data, 
-          improving force field parameterization by allowing filtering of specific molecular substructures"
+            description="Developed customizable fingerprint functions to filter commercial molecule databases and tag molecules with unique data,
+            improving force field parameterization by allowing filtering of specific molecular substructures"
             links={[
               <LogoAndLink
                 icon={<LanguageIcon sx={{ fontSize: 30 }}></LanguageIcon>}
