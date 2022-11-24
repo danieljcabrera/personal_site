@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans&display=swap");
 
 /* Maintains header, body, footer structure */
+body {
+  background-color: #343d52;
+}
+
 #root {
   display: flex;
   flex-direction: column;
