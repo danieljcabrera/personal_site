@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
   background-color: #343d52;
 }
 
@@ -25,6 +26,7 @@ div.section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 /* Small Screens (Mobile as Default (281-600px) */
@@ -101,6 +103,7 @@ div#burger-sidebar {
   top: 0;
   bottom: 0;
   background: rgba(26, 30, 41);
+  overflow: scroll;
 }
 
 nav#navigation {
@@ -186,7 +189,7 @@ p#copyright {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 1rem;
+  margin: 2rem 1rem;
   color: #707a91;
 }
 
@@ -195,7 +198,7 @@ p#copyright {
   bottom: 0;
   right: 0;
   color: white;
-  margin: 1rem;
+  margin: 3rem 2rem;
 }
 
 /* About Section */
@@ -301,7 +304,7 @@ ul#project-card-links {
   overflow-y: hidden;
   list-style-type: none;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
 }
 
 ul#project-card-links svg {
@@ -333,17 +336,9 @@ ul#project-card-links p {
 
 @media only screen and (max-width: 280px) {
   /* Very Small Screens */
-
-  #button-to-top {
-    margin: 0.5rem;
-  }
-
-  #button-to-top-arrow {
-    margin: 0.5rem;
-  }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) and (min-height: 600px) {
   /* Larger Screens */
 
   h1.section-header {

@@ -45,7 +45,7 @@ export default function ButtonToTop() {
             })
           }
         >
-          <BsSquareFill id="button-to-top" size="2rem" />
+          <BsSquareFill id="button-to-top" size="4rem" />
           <BsArrowUpShort id="button-to-top-arrow" size="2rem" />
         </div>
       )}
